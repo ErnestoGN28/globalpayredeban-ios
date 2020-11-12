@@ -277,7 +277,6 @@ import CommonCrypto
                 
                 let sessionId = self.kountHandler.generateSessionId()
                 var parameters = ["application_code" : apiCode,
-                                  "uid" : uid,
                                   "uid" : uid ?? "",
                                   "email" : email ?? "",
                                   "session_id": sessionId ?? ""] as [String : Any]
